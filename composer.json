@@ -54,6 +54,7 @@
         "composer/installers": "^1.9",
         "dinbror/blazy": "^1.8",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/backup_migrate": "^5.0",
         "drupal/bootstrap_barrio": "5.0.0-beta2",
         "drupal/bootstrap_sass": "5.0.0",
         "drupal/core-project-message": "^9.2",
