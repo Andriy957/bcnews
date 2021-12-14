@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '61b86e6c3ebeb93371e2a584906ac9dea4949560',
+        'reference' => '1e1f3c8a48e2ff1bac82e43acfa1280a32e7b635',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -520,15 +520,6 @@
             'reference' => '2.0.0',
             'dev_requirement' => false,
         ),
-        'drupal/flexslider' => array(
-            'pretty_version' => '2.0.0',
-            'version' => '2.0.0.0',
-            'type' => 'drupal-module',
-            'install_path' => __DIR__ . '/../../web/modules/contrib/flexslider',
-            'aliases' => array(),
-            'reference' => '8.x-2.0',
-            'dev_requirement' => false,
-        ),
         'drupal/forum' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -733,7 +724,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '61b86e6c3ebeb93371e2a584906ac9dea4949560',
+            'reference' => '1e1f3c8a48e2ff1bac82e43acfa1280a32e7b635',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(

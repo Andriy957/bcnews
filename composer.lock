@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66bdcd059527a1a38e1e0adfbfe74e1e",
+    "content-hash": "a7531ab1385fb45e7388b3eb0b183a51",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1366,75 +1366,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/flexible_weather_api",
                 "issues": "https://www.drupal.org/project/issues/flexible_weather_api"
-            }
-        },
-        {
-            "name": "drupal/flexslider",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/flexslider.git",
-                "reference": "8.x-2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flexslider-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "040e3f19200a3b6e008ad51abaa4cced009ec838"
-            },
-            "require": {
-                "drupal/core": "^8.8.0 || ^9.0"
-            },
-            "require-dev": {
-                "drupal/flexslider_fields": "*",
-                "drupal/flexslider_views": "*"
-            },
-            "suggest": {
-                "woothemes/flexslider": "~2.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1596904945",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "FlexSlider Module Contributors",
-                    "homepage": "https://www.drupal.org/node/1316346/committers",
-                    "role": "Contributors"
-                },
-                {
-                    "name": "amaria",
-                    "homepage": "https://www.drupal.org/user/66428"
-                },
-                {
-                    "name": "minorOffense",
-                    "homepage": "https://www.drupal.org/user/129088"
-                },
-                {
-                    "name": "ryanwebpage",
-                    "homepage": "https://www.drupal.org/user/737596"
-                },
-                {
-                    "name": "spotzero",
-                    "homepage": "https://www.drupal.org/user/657848"
-                }
-            ],
-            "description": "FlexSlider 2 integration for Drupal",
-            "homepage": "https://www.drupal.org/project/flexslider",
-            "support": {
-                "source": "https://git.drupalcode.org/project/flexslider",
-                "issues": "https://drupal.org/project/issues/flexslider"
             }
         },
         {
