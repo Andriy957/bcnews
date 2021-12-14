@@ -1,0 +1,15 @@
+<div class="weather-details-{{ weather_details.plugin_id }} block-uuid-{{ weather_details.uuid }}">
+  {% if weather_details %}
+    <div>{{ weather_details.location.city }}</div>
+    <div><img src="http://l.yimg.com/a/i/us/we/52/{{ weather_details.current_observation.condition.code }}.gif"> {{ weather_details.current_observation.condition.text }}</div>
+    <div>{% trans %}Temperature:{% endtrans %} {{ weather_details.current_observation.condition.temperature }}°С</div>
+    <div>{% trans %}Wind{% endtrans %} {{ weather_details.current_observation.wind.speed }} km/h</div>
+    <div><a href="https://www.google.com/maps/place/{{ weather_details.location.lat }},{{ weather_details.location.long }}">{% trans %}Geo coords{% endtrans %}</a></div>
+    <div>{% trans %}Updated time{% endtrans %} {{ weather_details.updated_time }}</div>
+  {% endif %}
+</div>
+<div class="weather-refresh-link">
+  {% if weather_details %}
+    <div>{{ weather_details.refresh_link }}</div>
+  {% endif %}
+</div>

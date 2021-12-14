@@ -1,0 +1,13 @@
+services:
+  plugin.manager.weather_api_location_service_plugin:
+    class: Drupal\flexible_weather_api\WeatherApiLocationServicePluginManager
+    arguments: ['@container.namespaces', '@cache.discovery','@module_handler', '@config.factory']
+
+  flexible_weather_api.weather_api_requester:
+    class: Drupal\flexible_weather_api\Service\WeatherApiRequester
+    arguments:
+      - '@config.factory'
+      - '@cache.default'
+      - '@http_client'
+      - '@datetime.time'
+      - '@date.formatter'

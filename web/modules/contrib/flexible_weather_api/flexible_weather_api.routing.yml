@@ -1,0 +1,39 @@
+flexible_weather_api.location_service.weather_api_location_service_geonames:
+  path: /weather-api/location-service/autocomplete/weather_api_location_service_geonames
+  defaults:
+    _controller: '\Drupal\flexible_weather_api\Controller\WeatherApiLocationServiceAutocompleteController::geonamesLocationAutocomplete'
+  requirements:
+    _permission: 'administer site configuration'
+
+flexible_weather_api.location_service.weather_api_location_service_google:
+  path: /weather-api/location-service/autocomplete/weather_api_location_service_google
+  defaults:
+    _controller: '\Drupal\flexible_weather_api\Controller\WeatherApiLocationServiceAutocompleteController::googleLocationAutocomplete'
+  requirements:
+    _permission: 'administer site configuration'
+
+flexible_weather_api.weather_api_services:
+  path: '/admin/config/services/weather-api'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Weather API services'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+flexible_weather_api.weather_api_services_location:
+  path: '/admin/config/services/weather-api/location-services'
+  defaults:
+    _controller: '\Drupal\flexible_weather_api\Controller\LocationServicesController::buildAvailableLocationServices'
+    _title: 'Location services'
+  requirements:
+    _permission: 'administer site configuration'
+
+flexible_weather_api.weather_api_location_service_plugin_configuration:
+  path: '/admin/config/services/weather-api/location-services/{location_service}'
+  defaults:
+    _form: 'Drupal\flexible_weather_api\Form\LocationServiceConfigurationForm'
+    _title_callback: '\Drupal\flexible_weather_api\Controller\LocationServicesController::getPageTitle'
+  requirements:
+    _permission: 'administer site configuration'

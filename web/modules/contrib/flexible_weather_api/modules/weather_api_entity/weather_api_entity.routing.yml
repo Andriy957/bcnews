@@ -1,0 +1,8 @@
+
+weather_api_entity.weather_api_ajax_refresh:
+  path: '/weather-api-entity/ajax-refresh-weather/{weather_service_id}'
+  defaults:
+    _controller: '\Drupal\weather_api_entity\Controller\RefreshWeatherBlockController::ajaxRefreshWeatherData'
+    _title: 'Ajax refresh weather'
+  requirements:
+    _permission: 'view published content'

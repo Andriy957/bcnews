@@ -1,0 +1,24 @@
+
+weather_api_plugin.weather_api_services_weather:
+  path: '/admin/config/services/weather-api/weather-services'
+  defaults:
+    _controller: '\Drupal\weather_api_plugin\Controller\WeatherServicesController::buildAvailableWeatherServices'
+    _title: 'Weather services'
+  requirements:
+    _permission: 'administer site configuration'
+
+weather_api_plugin.weather_service_configuration:
+  path: '/admin/config/services/weather-api/weather-services/{weather_service}'
+  defaults:
+    _form: 'Drupal\weather_api_plugin\Form\WeatherServiceConfigurationForm'
+    _title_callback: '\Drupal\weather_api_plugin\Controller\WeatherServicesController::getPageTitle'
+  requirements:
+    _permission: 'administer site configuration'
+
+weather_api_plugin.weather_api_ajax_refresh:
+  path: '/weather-api-plugin/ajax-refresh-weather/{city}/{plugin_id}/{uuid}'
+  defaults:
+    _controller: '\Drupal\weather_api_plugin\Controller\RefreshWeatherBlockController::ajaxRefreshWeatherData'
+    _title: 'Ajax refresh weather'
+  requirements:
+    _permission: 'view published content'

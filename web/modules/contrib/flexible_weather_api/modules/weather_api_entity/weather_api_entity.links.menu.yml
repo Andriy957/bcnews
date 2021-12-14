@@ -1,0 +1,8 @@
+
+# Weather service menu items definition
+entity.weather_service.collection:
+  title: 'Weather service Entity'
+  route_name: entity.weather_service.collection
+  description: 'List Weather service (bundles)'
+  parent: system.admin_config_services
+  weight: 99

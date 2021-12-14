@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains flexible_weather_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function flexible_weather_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the flexible_weather_api module.
+    case 'help.page.flexible_weather_api':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module provide integration with external weather services.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

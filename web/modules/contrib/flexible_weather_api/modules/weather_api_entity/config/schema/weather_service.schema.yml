@@ -1,0 +1,33 @@
+weather_api_entity.weather_service.*:
+  type: config_entity
+  label: 'Weather service config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+      label: 'ID'
+    api_key:
+      type: string
+      label: 'API key'
+    base_url:
+      type: string
+      label: 'Base URL'
+    query:
+      type: string
+      label: 'Query Params'
+    language:
+      type: string
+      label: 'Language'
+    location_service:
+      type: string
+      label: 'Location Service'
+    address:
+      type: string
+    template:
+      type: string
+      label: 'Template'

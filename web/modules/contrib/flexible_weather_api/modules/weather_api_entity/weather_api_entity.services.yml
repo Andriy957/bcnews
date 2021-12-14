@@ -1,0 +1,4 @@
+services:
+  weather_api_entity.weather_service_manager:
+    class: Drupal\weather_api_entity\Entity\WeatherServiceManager
+    arguments: ['@entity_type.manager']

@@ -1,0 +1,13 @@
+name: 'Weather API Plugin'
+type: module
+description: 'This module provides system of plugins for connection to external weather services.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Weather API'
+dependencies:
+  - flexible_weather_api:flexible_weather_api
+
+# Information added by Drupal.org packaging script on 2021-02-01
+version: '2.0.0'
+project: 'flexible_weather_api'
+datestamp: 1612179039

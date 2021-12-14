@@ -1,0 +1,221 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: $white;
+    margin-bottom: 240px;
+}
+
+a {
+    color: $gray-800;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+/* Header
+--------------------------------------------------*/
+#navbar-top {
+    justify-content: flex-end;
+}
+
+.navbar {
+    background: $red !important;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+   justify-content: center;
+}
+
+.language-switcher-language-url {
+    margin-left: auto;
+    color: $white;
+}
+
+.language-switcher-language-url a {
+    color: $white;
+    font-weight: bold;
+}
+
+.primary-menu {
+    background: $red;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+}
+
+.primary-menu li {
+    background: $blue;
+    display: flex;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav a{
+    color: $white;
+}
+
+.menu--account a {
+    color: $white;
+}
+
+.block-superfish {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sf-menu a {
+    background: $red !important;
+    color: $white;
+}
+
+.sf-depth-1 {
+    background: $red !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sf-depth-2 {
+    background: $red !important;
+}
+
+/* Front-page
+--------------------------------------------------*/
+
+.block-views-blockslideshow-on-the-frontpage-block-1 {
+    max-width: 480px;
+}
+
+.slick__arrow {
+   width: 94%;
+   top: 40%;
+}
+
+.field--name-field-slideshow-title-news {
+   text-align: left;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+/* Content
+--------------------------------------------------*/
+.content {
+    padding-bottom: 1px;
+}
+
+.item-list {
+    margin-left: 18px;
+}
+
+.news-wrapper {
+    margin-bottom: 40px;
+}
+
+.news-title-view a {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.news-category-view a {
+    color: $red;
+    font-size: 20px;
+}
+
+.field--name-field-image {
+    float: none;
+}
+
+.view-news-categories ul {
+    display: block;
+}
+
+.node .field--type-image {
+    float: none;
+}
+
+.node-title {
+    margin-top: 40px;
+    font-family: ReithSerif,Helvetica,Arial,freesans,sans-serif;
+    font-weight: 600;
+}
+
+.field--name-body {
+    max-width: 750px;
+    font-family: ReithSans,Helvetica,Arial,freesans,sans-serif;
+    font-weight: 400;
+    line-height: 1.375;
+}
+
+/* Footer
+--------------------------------------------------*/
+
+.site-footer {
+    background: $gray !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 240px;
+    padding: 0;
+}
+
+.weather-details- div {
+    color: $white;
+}
+
+.weather-details-open_weather_map {
+    color: $white;
+}
+
+.weather-refresh-link a {
+    color: $white;
+}
+
+/* Contact us
+--------------------------------------------------*/
+
+.node--type-webform {
+    background: $light-gray;
+    color: $white;
+}
+
+.btn-primary {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.form-item-about-company {
+    margin-top: 10px;
+}
+
+.form-item-company-address {
+    margin-top: 25px;
+}

@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies: {  }
+id: weather_stack
+label: 'Weather Stack'
+api_key: ''
+base_url: 'http://api.weatherstack.com/current'
+query: 'query=@location&access_key=@api_key&lang=@language&units=m'
+language: en
+location_service: weather_api_location_service_geonames
+address: ''
+template: weather_stack_entity_theme

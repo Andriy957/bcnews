@@ -1,0 +1,22 @@
+
+<div class="weather-details-{{ weather_details.plugin_id }} block-uuid-{{ weather_details.uuid }}">
+  {% if weather_details %}
+    {% for weather in weather_details.weather %}
+      <div>{{ weather_details.name }}</div>
+      <div>{% trans %}Temperature:{% endtrans %} {{ weather_details.main.temp }}°С</div>
+      <div>{% trans %}Сloudiness:{% endtrans %} {{ weather_details.clouds.all }}%</div>
+      <div>{% trans %}Humidity:{% endtrans %} {{ weather_details.main.humidity }}%</div>
+      <div>{% trans %}Pressure:{% endtrans %} {{ weather_details.main.pressure }}mm</div>
+      <div>{% trans %}Wind:{% endtrans %} {{ weather_details.wind.speed }} m/s</div>
+    {% endfor %}
+    <div>{% trans %}Updated time{% endtrans %} {{ weather_details.updated_time }}</div>
+  {% endif %}
+</div>
+<div class="weather-refresh-link">
+  {% if weather_details %}
+    <div>{{ weather_details.refresh_link }}</div>
+  {% endif %}
+</div>
+
+
+

@@ -1,0 +1,18 @@
+{
+    "name": "drupal/flexible_weather_api",
+    "type": "drupal-module",
+    "description": "This module provide integration with external weather services.",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "aternus/geonames-client": "^1.0",
+        "ext-json": "*"
+    },
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/flexible_weather_api",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/flexible_weather_api",
+        "source": "http://cgit.drupalcode.org/flexible_weather_api"
+    }
+}

@@ -1,0 +1,7 @@
+
+weather_api_plugin.weather_api_services_weather:
+  title: 'Weather services'
+  description: 'List of available weather services for the flexible weather api module.'
+  parent: flexible_weather_api.weather_api_services
+  route_name: weather_api_plugin.weather_api_services_weather
+  weight: 100

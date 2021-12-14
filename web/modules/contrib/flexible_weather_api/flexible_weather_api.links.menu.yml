@@ -1,0 +1,13 @@
+flexible_weather_api.weather_api_services:
+  title: 'Weather api services'
+  description: 'List of available services for the flexible weather api module.'
+  parent: system.admin_config_services
+  route_name: flexible_weather_api.weather_api_services
+  weight: 100
+
+flexible_weather_api.weather_api_services_location:
+  title: 'Location services'
+  description: 'List of available location services for the flexible weather api module.'
+  parent: flexible_weather_api.weather_api_services
+  route_name: flexible_weather_api.weather_api_services_location
+  weight: 100

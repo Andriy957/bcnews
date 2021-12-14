@@ -1,0 +1,5 @@
+entity.weather_service.add_form:
+  route_name: entity.weather_service.add_form
+  title: 'Add Weather service'
+  appears_on:
+    - entity.weather_service.collection

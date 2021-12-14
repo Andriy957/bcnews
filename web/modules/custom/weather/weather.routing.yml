@@ -1,0 +1,13 @@
+weather.weather_page:                               
+  path: '/weather/{city}'
+  defaults:                                                       
+    _controller: '\Drupal\weather\Controller\WeatherPage::getWeather'                          
+  requirements:                                        
+     _permission: 'access content'
+weather.settings:
+  path: '/admin/config/services/weather/settings'
+  defaults:
+    _form: '\Drupal\weather\Form\WeatherSettingsForm'
+    _title: 'Weather Settings form'
+  requirements:
+    _permission: 'administer site configuration'

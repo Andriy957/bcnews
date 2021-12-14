@@ -1,0 +1,18 @@
+<div class="weather-details-{{ weather_details.plugin_id }} block-uuid-{{ weather_details.uuid }}">
+  {% if weather_details %}
+    {% for weather in weather_details.weather %}
+      <div>{{ weather_details.name }}, {{ weather_details.sys.country }}</div>
+      <div><img src="http://openweathermap.org/img/wn/{{ weather.icon }}.png"/> {{ weather.description }}</div>
+      <div>{% trans %}temperature:{% endtrans %} {{ weather_details.main.temp }}°С ({% trans %}feels like{% endtrans %} {{ weather_details.main.feels_like }}°С)</div>
+      <div>{% trans %}scatter from{% endtrans %} {{ weather_details.main.temp_min }}°С {% trans %}to{% endtrans %} {{ weather_details.main.temp_max }}°С</div>
+      <div>{% trans %}wind{% endtrans %} {{ weather_details.wind.speed }} m/s</div>
+      <div><a href="https://www.google.com/maps/place/{{ weather_details.coord.lat }},{{ weather_details.coord.lon }}">{% trans %}Geo coords{% endtrans %}</a></div>
+    {% endfor %}
+    <div>{% trans %}Updated time{% endtrans %} {{ weather_details.updated_time }}</div>
+  {% endif %}
+</div>
+<div class="weather-refresh-link">
+  {% if weather_details %}
+    <div>{{ weather_details.refresh_link }}</div>
+  {% endif %}
+</div>

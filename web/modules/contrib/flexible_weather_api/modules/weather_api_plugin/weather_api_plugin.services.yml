@@ -1,0 +1,5 @@
+services:
+  plugin.manager.weather_api_plugin:
+    class: Drupal\weather_api_plugin\WeatherApiPluginManager
+    parent: default_plugin_manager
+    arguments: ['@config.factory']

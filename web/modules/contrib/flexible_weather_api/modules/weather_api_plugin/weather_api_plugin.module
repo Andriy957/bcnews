@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Contains weather_api_plugin.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function weather_api_plugin_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the weather_api_plugin module.
+    case 'help.page.weather_api_plugin':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module provides system of plugins for connection to external weather services.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function weather_api_plugin_theme($existing, $type, $theme, $path) {
+  return [
+    'open_weather_map_theme' => [
+      'variables' => [
+        'weather_details' => [],
+      ],
+    ],
+    'weather_stack_theme' => [
+      'variables' => [
+        'weather_details' => [],
+      ],
+    ],
+    'yahoo_weather_theme' => [
+      'variables' => [
+        'weather_details' => [],
+      ],
+    ],
+  ];
+}
